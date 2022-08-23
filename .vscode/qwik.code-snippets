@@ -1,0 +1,95 @@
+{
+	"Qwik component": {
+		"scope": "typescriptreact",
+		"prefix": "component$",
+		"description": "Qwik counter component",
+		"body": [
+			"import { component$ } from '@builder.io/qwik';",
+			"",
+			"type Props = {",
+			"\t",
+			"}",
+			"",
+			"const ${TM_FILENAME_BASE} = component$((props: Props) => {",
+			"  return (",
+			"    <div>",
+			"      ",
+			"    </div>",
+			"  );",
+			"});",
+			"export default ${TM_FILENAME_BASE};"
+		]
+	},
+	"Qwik component (basic)": {
+		"scope": "javascriptreact,typescriptreact",
+		"prefix": "component$basic",
+		"description": "Basic Qwik component",
+		"body": [
+			"export const ${1:MyCmp} = component$(() => {",
+			"  return (",
+			"    <div>",
+			"      <div>",
+			"        ${1:MyCmp}",
+			"      </div>",
+			"    </div>",
+			"  );",
+			"});"
+		]
+	},
+	"Qwik state": {
+		"scope": "javascriptreact,typescriptreact",
+		"prefix": "useStore$",
+		"description": "useStore() declaration",
+		"body": [
+			"const ${1:state} = useStore({",
+			"  $2",
+			"});",
+			"$0"
+		]
+	},
+	"$ hook": {
+		"scope": "javascriptreact,typescriptreact",
+		"prefix": "$",
+		"description": "$() function hook",
+		"body": [
+			"$(() => {",
+			"  $0",
+			"});",
+			""
+		]
+	},
+	"useClientEffect": {
+		"scope": "javascriptreact,typescriptreact",
+		"prefix": "useClientEffect",
+		"description": "useClientEffect$() function hook",
+		"body": [
+			"useClientEffect$((track) => {",
+			"  $0",
+			"});",
+			""
+		]
+	},
+	"useWatch": {
+		"scope": "javascriptreact,typescriptreact",
+		"prefix": "useWatch",
+		"description": "useWatch$() function hook",
+		"body": [
+			"useWatch$((track) => {",
+			"  track($1);",
+			"  $0",
+			"});",
+			""
+		]
+	},
+	"useServerMount": {
+		"scope": "javascriptreact,typescriptreact",
+		"prefix": "useServerMount",
+		"description": "useServerMount$() function hook",
+		"body": [
+			"useServerMount$(() => {",
+			"  $0",
+			"});",
+			""
+		]
+	}
+}
