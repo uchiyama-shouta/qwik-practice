@@ -28,7 +28,7 @@ app.use(express.static(distDir, { index: false }));
 app.use(notFound);
 
 // start the express server
-app.listen(process.env["PORT"] || 3000, () => {
+app.listen([Number(process.env["PORT"]),'0.0.0.0'] || 3000, () => {
   /* eslint-disable */
   console.log(`http://localhost:${process.env["PORT"] || 3000}/`);
 });
