@@ -2,10 +2,10 @@
   "name": "qwik-app",
   "description": "File based routing and MDX support Vite.js tooling. Express.js server. Prettier code formatter. Tailwind CSS framework.",
   "scripts": {
-    "build": "npm run typecheck && npm run build.client && npm run build.ssr",
+    "build": "yarn typecheck && yarn build.client && yarn build.ssr",
     "build.client": "vite build",
     "build.ssr": "vite build --ssr src/entry.express.tsx",
-    "dev": "npm run dev.ssr",
+    "dev": "yarn dev.ssr",
     "dev.client": "vite",
     "dev.debug": "node --inspect-brk node_modules/vite/bin/vite.js --force --mode ssr",
     "dev.ssr": "node --inspect node_modules/vite/bin/vite.js --mode ssr",
@@ -13,7 +13,7 @@
     "fmt.check": "prettier --check .",
     "lint": "eslint \"src/**/*.ts*\"",
     "serve": "node server/entry.express",
-    "start": "npm run serve",
+    "start": "yarn serve",
     "typecheck": "tsc --incremental --noEmit"
   },
   "devDependencies": {
