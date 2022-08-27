@@ -2,7 +2,7 @@
   "name": "qwik-app",
   "description": "File based routing and MDX support Vite.js tooling. Express.js server. Prettier code formatter. Tailwind CSS framework.",
   "scripts": {
-    "build": "yarn typecheck && yarn build.client && yarn build.ssr",
+    "build": "vite build --ssr src/entry.express.tsx",
     "build.client": "vite build",
     "build.ssr": "vite build --ssr src/entry.express.tsx",
     "dev": "yarn dev.ssr",
